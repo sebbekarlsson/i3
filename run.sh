@@ -31,3 +31,6 @@ cp ./terminalrc ~/.config/xfce4/terminal/terminalrc
 # Set locale
 echo 'export LC_ALL=en_US.utf-8' >> ~/.bashrc
 echo 'export LANG="$LC_ALL"' >> ~/.bashrc
+
+# Set i3status config
+cp ./i3status.conf ~/.
