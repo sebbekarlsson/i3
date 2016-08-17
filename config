@@ -45,6 +45,10 @@ bindsym $mod+d exec dmenu_run
 #gaps inner 8
 #gaps outer 0
 
+# class         border  backgr. text    indicator child_border
+client.focused  #3498db #3498db #ffffff #3498db #3498db
+
+
 # change focus
 bindsym $mod+Control+Left focus left
 bindsym $mod+Control+Down focus down
