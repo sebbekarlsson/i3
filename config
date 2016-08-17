@@ -42,8 +42,8 @@ bindsym $mod+d exec dmenu_run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-#gaps inner 8
-#gaps outer 0
+gaps inner 8
+gaps outer 8
 
 # class         border  backgr. text    indicator child_border
 client.focused  #3498db #3498db #ffffff #3498db #3498db
