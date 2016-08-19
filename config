@@ -32,6 +32,8 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec xfce4-terminal
 
+bindsym $mod+Ctrl+p exec scrot
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
