@@ -18,5 +18,5 @@ MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 BackgroundDarkness=0.800000
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
-ColorForeground=#d79921
+ColorForeground=#fabd2f
 ColorCursor=#cc241d
