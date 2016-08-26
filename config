@@ -48,8 +48,10 @@ gaps inner 16
 gaps outer 16
 
 # class         border  backgr. text    indicator child_border
-client.focused  #3498db #3498db #ffffff #3498db #3498db
+client.focused  #d79921 #d79921 #ffffff #cc241d #d79921
 
+new_window 1pixel
+for_window [class="^.*"] border pixel 1
 
 # change focus
 bindsym $mod+Control+Left focus left

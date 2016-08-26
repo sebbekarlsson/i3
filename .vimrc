@@ -25,6 +25,7 @@ Plugin 'godlygeek/tabular'
 " ==== PLUGIN THEMES ====
 Plugin 'vim-scripts/darktango.vim'
 Plugin 'jonathanfilip/vim-lucius'
+Plugin 'morhetz/gruvbox'
 " ==== END PLUGIN THEMES ====
 
 " ==== PLUGIN SYNTAXES ====
