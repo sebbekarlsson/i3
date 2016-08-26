@@ -32,7 +32,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec xfce4-terminal
 
-bindsym $mod+Ctrl+p exec scrot
+bindsym --release $mod+Ctrl+p exec scrot /home/sebastian/scrot.png -s
 
 # kill focused window
 bindsym $mod+Shift+q kill
