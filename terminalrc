@@ -19,4 +19,6 @@ MiscHighlightUrls=TRUE
 BackgroundDarkness=0.800000
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 ColorForeground=#fabd2f
-ColorCursor=#cc241d
+ColorCursor=#ebdbb2
+FontAllowBold=FALSE
+
