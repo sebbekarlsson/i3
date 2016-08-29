@@ -34,6 +34,7 @@ Plugin 'hdima/python-syntax'
 Plugin 'othree/yajs.vim'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'jdonaldson/vaxe'
 " === END PLUGIN SYNTAXES ====
 
 " ==== END PLUGINS ====
@@ -42,7 +43,7 @@ call vundle#end()
 filetype plugin indent on
 
 " ==== BASIC ====
-colorscheme lucius
+colorscheme gruvbox
 set guifont=Monospace\ 10
 set fillchars+=vert:\$
 syntax enable
