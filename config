@@ -48,8 +48,8 @@ bindsym $mod+d exec dmenu_run
 gaps inner 0
 gaps outer 0
 
-# class         border  backgr. text    indicator child_border
-client.focused  #d79921 #d79921 #ffffff #cc241d #d79921
+# class         border	backgr.	text	indicator	child_border
+client.focused  #FFFFFF	#FFFFFF	#FFFFFF	#FFFFFF		#FFFFFF
 
 new_window 1pixel
 for_window [class="^.*"] border pixel 1
