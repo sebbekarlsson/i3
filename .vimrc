@@ -33,8 +33,6 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'hdima/python-syntax'
 Plugin 'othree/yajs.vim'
 Plugin 'mitsuhiko/vim-jinja'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'jdonaldson/vaxe'
 " === END PLUGIN SYNTAXES ====
 
 " ==== END PLUGINS ====
