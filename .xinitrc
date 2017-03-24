@@ -1,3 +1,3 @@
-compton --config ~/.config/i3/compton.conf --backend glx --paint-on-overlay --vsync opengl-swc &
-feh --bg-fill /home/ianertson/Pictures/forest.jpg
+feh --bg-fill /home/ianertson/Pictures/bg.png
 exec /usr/bin/i3
+exec /home/ianertson/.config/i3/multimonitor.sh
