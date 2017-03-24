@@ -60,7 +60,7 @@ let &colorcolumn="80"
 :set lines=999 columns=999
 
 " ==== NERDTREE ====
-let NERDTreeIgnore = ['\.pyc$', '\.o$', '[a-zA-Z]*egg[a-zA-Z]*', '[a-zA-Z]*cache[a-zA-Z]*']
+let NERDTreeIgnore = ['\.pyc$', '\.o$', '\.so$', '\.a$', '[a-zA-Z]*egg[a-zA-Z]*', '[a-zA-Z]*cache[a-zA-Z]*']
 let g:NERDTreeWinPos="left"
 let g:NERDTreeDirArrows=0
 map <C-t> :NERDTreeToggle<CR>
