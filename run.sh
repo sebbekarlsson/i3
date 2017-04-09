@@ -27,6 +27,7 @@ yes | sudo pacman -S i3status feh
 
 # Set xfce4-terminal config
 cp ./terminalrc ~/.config/xfce4/terminal/terminalrc
+cp -r ./termite ~/.config/.
 
 # Set locale
 echo 'export LC_ALL=en_US.utf-8' >> ~/.bashrc
