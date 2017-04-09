@@ -31,7 +31,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec termite
 
 bindsym --release $mod+Ctrl+p exec scrot /home/ianertson/scrot.png -s
 

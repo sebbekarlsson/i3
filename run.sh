@@ -5,7 +5,7 @@ sudo pacman -Syuu
 
 # Install base packages
 yes | sudo pacman -S xorg-xinit xorg-xrandr
-yes | sudo pacman -S gvim chromium gnome-control-center xfce4-terminal dmenu
+yes | sudo pacman -S gvim chromium gnome-control-center termite dmenu
 yes | sudo pacman -S git
 
 # Install vundle for vim
