@@ -90,8 +90,8 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 #volume
-bindsym $mod+F3 exec amixer -D pulse sset Master 5%+
-bindsym $mod+F2 exec amixer -D pulse sset Master 5%-
+bindsym $mod+F3 exec /home/ianertson/Applications/i3-volume-ctrl/volume-increase.sh
+bindsym $mod+F2 exec /home/ianertson/Applications/i3-volume-ctrl/volume-decrease.sh
 
 # change container layout (stacked, tabbed, toggle split)
 # bindsym $mod+s layout stacking
