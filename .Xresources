@@ -36,3 +36,4 @@
 *.color15:      #c0b18b
 
 URxvt.scrollBar: false
+URxvt.font: xft:monospace:size=10
