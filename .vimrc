@@ -53,6 +53,8 @@ set number
 set laststatus=2
 set smartindent
 set st=4 sw=4 et
+set shiftwidth=4
+set tabstop=4
 let &colorcolumn="80"
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
