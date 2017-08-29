@@ -35,11 +35,6 @@ Plugin 'hdima/python-syntax'
 Plugin 'othree/yajs.vim'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'evanmiller/nginx-vim-syntax'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-
-let g:jsx_ext_required = 0
-
 " === END PLUGIN SYNTAXES ====
 
 " ==== END PLUGINS ====
