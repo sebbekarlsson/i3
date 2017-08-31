@@ -65,6 +65,7 @@ let &colorcolumn="80"
 
 " ==== NERDTREE ====
 let NERDTreeIgnore = ['\.pyc$', '\.o$', '\.so$', '\.a$', '[a-zA-Z]*egg[a-zA-Z]*', '[a-zA-Z]*cache[a-zA-Z]*']
+let NERDTreeShowHidden=1
 let g:NERDTreeWinPos="left"
 let g:NERDTreeDirArrows=0
 map <C-t> :NERDTreeToggle<CR>
