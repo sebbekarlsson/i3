@@ -1,0 +1,15 @@
+snippet pycoding
+# -*- coding: $1 -*-
+endsnippet
+
+
+snippet flaskblueprint
+from flask import Blueprint, render_template 
+
+
+bp = Blueprint(__name__, __name__, template_folder='templates')
+
+@bp.route($1)
+def show():
+    return render_template($2)
+endsnippet

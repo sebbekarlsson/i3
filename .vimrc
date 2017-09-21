@@ -22,6 +22,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
 Plugin 'godlygeek/tabular'
+Plugin 'SirVer/ultisnips'
 
 " ==== PLUGIN THEMES ====
 Plugin 'vim-scripts/darktango.vim'
@@ -83,6 +84,14 @@ let g:syntastic_javascript_mri_args = "--config=$HOME/.jshintrc"
 let g:syntastic_python_checkers = [ 'pylint', 'flake8', 'pep8', 'pyflakes', 'python']
 let g:syntastic_yaml_checkers = ['jsyaml']
 let g:syntastic_html_tidy_exec = 'tidy5'
+
+" ==== Snips ====
+let g:UltiSnipsExpandTrigger="<A-ENTER>"
+let g:UltiSnipsJumpForwardTrigger="<A-ENTER>"
+let g:UltiSnipsJumpBackwardTrigger="<A-BACKSPACE>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
 " ==== Easymotion ====
 let g:EasyMotion_do_mapping = 0
