@@ -13,3 +13,25 @@ bp = Blueprint(__name__, __name__, template_folder='templates')
 def show():
     return render_template($2)
 endsnippet
+
+snippet setup
+from distutils.core import setup
+import setuptools
+
+
+setup(
+    name='$1',
+    version='$2',
+    install_requires=[
+        '$3'
+    ],
+    packages=[
+        '$4'
+    ],
+    entry_points={
+        "console_scripts": [
+            $5"
+        ]
+    }
+)
+endsnippet
