@@ -1,0 +1,25 @@
+snippet flask_layout
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+        {% endblock %}
+
+        <link
+	rel='stylesheet'
+	type='text/css'
+        href='{{ url_for('static', filename='css/style.css') }}'/>
+
+        {% assets "js_all" %}
+            <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+        {% endassets %}
+
+	<meta charset='UTF-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        {% block site_content %}
+        {% endblock %}
+    </body>
+</html>
+endsnippet
