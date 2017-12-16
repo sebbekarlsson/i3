@@ -9,24 +9,16 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-scripts/L9'
 Plugin 'tpope/vim-fugitive'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/syntastic'
-Plugin 'christoomey/vim-conflicted'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'mattn/emmet-vim'
-Plugin 'sjl/gundo.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
-Plugin 'godlygeek/tabular'
 Plugin 'SirVer/ultisnips'
 
 " ==== PLUGIN THEMES ====
-Plugin 'vim-scripts/darktango.vim'
-Plugin 'jonathanfilip/vim-lucius'
 Plugin 'morhetz/gruvbox'
 " ==== END PLUGIN THEMES ====
 
