@@ -32,7 +32,6 @@ Plugin 'morhetz/gruvbox'
 
 " ==== PLUGIN SYNTAXES ====
 Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'hdima/python-syntax'
 Plugin 'othree/yajs.vim'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'evanmiller/nginx-vim-syntax'
@@ -84,6 +83,9 @@ let g:syntastic_javascript_mri_args = "--config=$HOME/.jshintrc"
 let g:syntastic_python_checkers = [ 'pylint', 'flake8', 'pep8', 'pyflakes', 'python']
 let g:syntastic_yaml_checkers = ['jsyaml']
 let g:syntastic_html_tidy_exec = 'tidy5'
+
+" === flake8 ====
+let g:flake8_show_in_file=1
 
 " ==== Snips ====
 let g:UltiSnipsExpandTrigger="<A-ENTER>"
