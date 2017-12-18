@@ -108,6 +108,9 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
+" ==== disable mouse
+set mouse=c
+
 " ==== custom commands
 command JsonPretty execute ":%!python -m json.tool"
 set secure
