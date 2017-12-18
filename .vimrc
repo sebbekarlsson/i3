@@ -1,40 +1,50 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible  " be iMproved, required
+filetype off  " required
 set exrc
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" ==== PLUGINS ====
+" ==== plugin manager
 Plugin 'VundleVim/Vundle.vim'
+
+" ==== helpers
 Plugin 'vim-scripts/L9'
-Plugin 'tpope/vim-fugitive'
+
+" ==== File tree
 Plugin 'scrooloose/nerdtree'
+
+" ==== Completion
 Plugin 'Valloric/YouCompleteMe'
+
+" ==== Git
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+
+" ==== syntax helpers
 Plugin 'scrooloose/syntastic'
-Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-surround'
-Plugin 'kien/ctrlp.vim'
-Plugin 'SirVer/ultisnips'
-
-" ==== PLUGIN THEMES ====
-Plugin 'morhetz/gruvbox'
-" ==== END PLUGIN THEMES ====
-
-" ==== PLUGIN SYNTAXES ====
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'mitsuhiko/vim-jinja'
-Plugin 'evanmiller/nginx-vim-syntax'
-" === END PLUGIN SYNTAXES ====
 
-" ==== END PLUGINS ====
+" ==== moving / seraching
+Plugin 'easymotion/vim-easymotion'
+Plugin 'kien/ctrlp.vim'
+
+" ==== snippets
+Plugin 'SirVer/ultisnips'
+
+" ==== AUTOCOMPLETE PAIRS
+Plugin 'jiangmiao/auto-pairs'
+
+" ==== PLUGIN THEMES
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()
 filetype plugin indent on
 
-" ==== BASIC ====
+" ==== Colors and other basic settings
 colorscheme gruvbox
 set guifont=Monospace\ 10
 set fillchars+=vert:\$
@@ -55,14 +65,31 @@ let &colorcolumn="80"
 :set guioptions-=L  "remove left-hand scroll bar
 :set lines=999 columns=999
 
-" ==== NERDTREE ====
-let NERDTreeIgnore = ['\.pyc$', '\.o$', '\.so$', '\.a$', '\.swp', '*\.swp', '\.swo', '\.swn', '\.swh', '\.swm', '\.swl', '\.swk', '\.sw*$', '[a-zA-Z]*egg[a-zA-Z]*', '[a-zA-Z]*cache[a-zA-Z]*']
+" ==== NERDTREE
+let NERDTreeIgnore = ['\.pyc$',
+    '\.o$',
+    '\.so$',
+    '\.a$',
+    '\.swp',
+    '*\.swp',
+    '\.swo',
+    '\.swn',
+    '\.swh',
+    '\.swm',
+    '\.swl',
+    '\.swk',
+    '\.sw*$',
+    '[a-zA-Z]*egg[a-zA-Z]*',
+    '[a-zA-Z]*cache[a-zA-Z]*',
+    '.DS_Store'
+]
+
 let NERDTreeShowHidden=1
 let g:NERDTreeWinPos="left"
 let g:NERDTreeDirArrows=0
 map <C-t> :NERDTreeToggle<CR>
 
-" ==== Syntastic ====
+" ==== Syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -76,26 +103,27 @@ let g:syntastic_python_checkers = [ 'pylint', 'flake8', 'pep8', 'pyflakes', 'pyt
 let g:syntastic_yaml_checkers = ['jsyaml']
 let g:syntastic_html_tidy_exec = 'tidy5'
 
-" === flake8 ====
+" === flake8
 let g:flake8_show_in_file=1
 
-" ==== Snips ====
+" ==== snippets
 let g:UltiSnipsExpandTrigger="<A-ENTER>"
 let g:UltiSnipsJumpForwardTrigger="<A-ENTER>"
 let g:UltiSnipsJumpBackwardTrigger="<A-BACKSPACE>"
-
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-" ==== Easymotion ====
+" ==== Easymotion
 let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1
 nmap f <Plug>(easymotion-s)
 
+" ==== moving around
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
+" ==== custom commands
 command JsonPretty execute ":%!python -m json.tool"
 set secure
