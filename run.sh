@@ -35,9 +35,11 @@ yes | yaourt i3-gaps
 yes | sudo pacman -S i3status feh
 yes | yaourt ttf-material-icons
 
-# Set xfce4-terminal config
-cp ./terminalrc ~/.config/xfce4/terminal/terminalrc
-cp -r ./termite ~/.config/.
+# Set terminal config
+cp .Xresources ~/.
+
+# set polybar config
+cp -r polybar ~/.config/.
 
 # Set locale
 echo 'export LC_ALL=en_US.utf-8' >> ~/.bashrc
