@@ -112,5 +112,5 @@ nmap <silent> <A-Right> :wincmd l<CR>
 set mouse=c
 
 " ==== custom commands
-command JsonPretty execute ":%!python -m json.tool"
+command Jsonfix execute ":%!python -m json.tool"
 set secure
