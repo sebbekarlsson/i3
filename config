@@ -27,6 +27,14 @@ font pango:monospace 8
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+# polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# lock
+bindsym $mod+l exec "~/.config/i3lock/fuzzy_lock.sh"
+# auto lock
+# exec xautolock -time 15 -locker '~/.config/i3lock/fuzzy_lock.sh' &
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -47,8 +55,8 @@ bindsym $mod+w exec rofi -show window -fg "#f1f1f1" -bg "#333333" -hlfg "#ffffff
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-gaps inner 0
-gaps outer 0
+gaps inner 12
+gaps outer 12
 
 # class         border	backgr.	text	indicator	child_border
 client.focused  #FFFFFF	#FFFFFF	#FFFFFF	#FFFFFF		#FFFFFF
@@ -89,9 +97,14 @@ bindsym $mod+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-#volume
-bindsym $mod+F3 exec /home/ianertson/Applications/i3-volume-ctrl/volume-increase.sh
-bindsym $mod+F2 exec /home/ianertson/Applications/i3-volume-ctrl/volume-decrease.sh
+# volume
+# bindsym $mod+F3 exec /home/ianertson/Applications/i3-volume-ctrl/volume-increase.sh
+# bindsym $mod+F2 exec /home/ianertson/Applications/i3-volume-ctrl/volume-decrease.sh
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle &
 
 # change container layout (stacked, tabbed, toggle split)
 # bindsym $mod+s layout stacking
@@ -174,7 +187,7 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-	position top
-}
+# bar {
+#        status_command i3status
+#	position top
+#}
