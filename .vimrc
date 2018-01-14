@@ -27,6 +27,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'mitsuhiko/vim-jinja'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " ==== moving / seraching
 Plugin 'easymotion/vim-easymotion'
@@ -37,6 +38,9 @@ Plugin 'SirVer/ultisnips'
 
 " ==== AUTOCOMPLETE PAIRS
 Plugin 'jiangmiao/auto-pairs'
+
+" Status bar on bottom
+Plugin 'bling/vim-airline'
 
 " ==== PLUGIN THEMES
 Plugin 'morhetz/gruvbox'
@@ -112,5 +116,5 @@ nmap <silent> <A-Right> :wincmd l<CR>
 set mouse=c
 
 " ==== custom commands
-command Jsonfix execute ":%!python -m json.tool"
+command JsonPretty execute ":%!python -m json.tool"
 set secure
