@@ -36,9 +36,6 @@ Plugin 'kien/ctrlp.vim'
 " ==== snippets
 Plugin 'SirVer/ultisnips'
 
-" ==== AUTOCOMPLETE PAIRS
-Plugin 'jiangmiao/auto-pairs'
-
 " Status bar on bottom
 Plugin 'bling/vim-airline'
 
