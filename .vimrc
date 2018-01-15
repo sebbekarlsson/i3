@@ -112,6 +112,9 @@ nmap <silent> <A-Right> :wincmd l<CR>
 " ==== disable mouse
 set mouse=c
 
+" ==== disable swap file warning
+set shortmess+=A
+
 " ==== custom commands
 command JsonPretty execute ":%!python -m json.tool"
 set secure
