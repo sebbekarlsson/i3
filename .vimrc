@@ -29,7 +29,7 @@ Plugin 'othree/yajs.vim'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
-" ==== moving / seraching
+" ==== moving / searching
 Plugin 'easymotion/vim-easymotion'
 Plugin 'kien/ctrlp.vim'
 
