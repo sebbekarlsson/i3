@@ -28,6 +28,7 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'ap/vim-css-color'
 
 " ==== moving / searching
 Plugin 'easymotion/vim-easymotion'
