@@ -29,6 +29,7 @@ Plugin 'othree/yajs.vim'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'ap/vim-css-color'
+Plugin 'Vimjas/vim-python-pep8-indent'
 
 " ==== moving / searching
 Plugin 'easymotion/vim-easymotion'
