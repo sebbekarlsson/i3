@@ -34,6 +34,7 @@ Plugin 'Vimjas/vim-python-pep8-indent'
 " ==== moving / searching
 Plugin 'easymotion/vim-easymotion'
 Plugin 'kien/ctrlp.vim'
+Plugin 'ervandew/supertab'
 
 " ==== snippets
 Plugin 'SirVer/ultisnips'
@@ -94,11 +95,18 @@ let g:syntastic_html_tidy_exec = 'tidy5'
 let g:flake8_show_in_file=1
 
 " ==== snippets
-let g:UltiSnipsExpandTrigger="<A-ENTER>"
-let g:UltiSnipsJumpForwardTrigger="<A-ENTER>"
-let g:UltiSnipsJumpBackwardTrigger="<A-BACKSPACE>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " ==== Easymotion
 let g:EasyMotion_do_mapping = 0
