@@ -150,6 +150,12 @@ bindsym $mod+Shift+0 move container to workspace 10
 # moving workspaces
 bindsym $mod+m move workspace to output left
 
+# resizing
+bindsym $mod+Ctrl+Shift+Right resize shrink width 1 px or 1 ppt
+bindsym $mod+Ctrl+Shift+Up resize grow height 1 px or 1 ppt
+bindsym $mod+Ctrl+Shift+Down resize shrink height 1 px or 1 ppt
+bindsym $mod+Ctrl+Shift+Left resize grow width 1 px or 1 ppt
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
