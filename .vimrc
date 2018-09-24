@@ -2,6 +2,8 @@ set nocompatible  " be iMproved, required
 filetype off  " required
 set exrc
 
+set encoding=UTF-8
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -39,6 +41,7 @@ Plugin 'klen/pylama'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
+Plugin 'terryma/vim-multiple-cursors'
 
 " ==== snippets
 Plugin 'SirVer/ultisnips'
