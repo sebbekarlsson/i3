@@ -30,6 +30,10 @@ Plugin 'mitsuhiko/vim-jinja'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'ap/vim-css-color'
 Plugin 'Vimjas/vim-python-pep8-indent'
+Plugin 'python-rope/rope'
+Plugin 'python-rope/ropemode'
+Plugin 'python-rope/ropevim'
+Plugin 'klen/pylama'
 
 " ==== moving / searching
 Plugin 'easymotion/vim-easymotion'
