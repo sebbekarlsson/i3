@@ -1,6 +1,6 @@
 ! special
 *.foreground:   #c0b18b
-*.background:   #1f1f1f
+*.background:   #282828
 *.cursorColor:  #c0b18b
 
 ! black
@@ -36,4 +36,4 @@
 *.color15:      #c0b18b
 
 URxvt.scrollBar: false
-URxvt.font: xft:monospace:size=10
+URxvt.font: xft:NotoSansMono-Medium:size=10
