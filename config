@@ -13,8 +13,8 @@ font pango:monospace 8
 bindsym $mod+l exec "~/.config/i3lock/fuzzy_lock.sh"
 
 # gaps size
-gaps inner 12
-gaps outer 12
+gaps inner 0
+gaps outer 0
 
 # colors
 # class         border	backgr.	text	indicator	child_border
@@ -34,6 +34,9 @@ bindsym $mod+Return exec urxvt
 # screenshot
 bindsym --release $mod+Ctrl+p exec scrot /home/ianertson/scrot.png -s
 bindsym --release $mod+Ctrl+k exec /usr/local/bin/keyswitch.out
+
+# inject code snippet
+bindsym --release $mod+Shift+p exec --no-startup-id /home/ianertson/code.sh
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -82,6 +85,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle &
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+s sticky toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
