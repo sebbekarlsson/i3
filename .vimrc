@@ -14,7 +14,9 @@ filetype plugin indent on
 
 " ==== Colors and other basic settings
 colorscheme gruvbox
-set guifont=Inconsolata\ 10
+" colorscheme C64
+set guifont=Inconsolata\ 14
+" set guifont=C64\ Pro\ Mono\ 8
 set fillchars+=vert:\$
 syntax enable
 set background=dark
@@ -52,7 +54,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_mri_args = "--config=$HOME/.jshintrc"
-let g:syntastic_python_checkers = [ 'pylint', 'flake8', 'python']
+let g:syntastic_python_checkers = [ 'pylint', 'flake8', 'python' ]
 let g:syntastic_yaml_checkers = ['jsyaml']
 let g:syntastic_html_tidy_exec = 'tidy5'
 let g:syntastic_python_flake8_config_file='.flake8'
@@ -93,7 +95,8 @@ set mouse=c
 set shortmess+=A
 
 " === generate ctags
-call system('ctags -R . ')
+" echo "generating tags..."
+" call system('ctags -R . ')
 
 let g:pymode_indent = 0
 " ==== custom commands
