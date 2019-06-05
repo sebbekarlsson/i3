@@ -9,20 +9,37 @@ set $mod Mod4
 # ---------------- { apperance } --------------- #
 font pango:monospace 8
 
-# lockscreen
-bindsym $mod+l exec "~/.config/i3lock/fuzzy_lock.sh"
+# set primary gruvbox colorscheme colors
+set $bg #282828
+set $red #cc241d
+set $green #98971a
+set $yellow #d79921
+set $blue #458588
+set $purple #b16286
+set $aqua #689d68
+set $gray #a89984
+set $darkgray #1d2021
 
 # gaps size
 gaps inner 0
 gaps outer 0
 
-# colors
-# class         border	backgr.	text	indicator	child_border
-client.focused  #FFFFFF	#FFFFFF	#FFFFFF	#FFFFFF		#FFFFFF
+
+# class                 border|backgr|text|indicator|child_border
+client.focused          $red $red $darkgray $red $red
+client.focused_inactive $darkgray $darkgray $yellow $bg $darkgray
+client.unfocused        $darkgray $darkgray $yellow $bg $darkgray
+client.urgent           $red $red $white $red $red
+#end of window title bars & borders section
+
 
 # windows
 new_window 1pixel
-for_window [class="^.*"] border pixel 1
+#for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border normal
+
+# lockscreen
+bindsym $mod+l exec "~/.config/i3lock/fuzzy_lock.sh"
 
 # ---------------- { controls } --------------- #
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -165,7 +182,24 @@ exec --no-startup-id i3-msg 'exec /home/ianertson/notes.sh'
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+#bar {
+#    status_command i3status
+#	position top
+#}
+
 bar {
-    status_command i3status
-	position top
+    position top
+    status_command i3blocks -c ~/.config/i3/i3blocks.conf
+    colors {
+        # bar background color
+        background $bg
+        # text color used for blocks that do not have a color specified.
+        statusline $yellow
+        # workspaces section            
+        #                    border  backgr. text
+        focused_workspace    $aqua $aqua $darkgray
+        inactive_workspace   $darkgray $darkgray $yellow
+        active_workspace     $darkgray $darkgray $yellow
+        urgent_workspace     $red $red $bg
+    }
 }

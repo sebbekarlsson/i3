@@ -17,7 +17,7 @@ colorscheme gruvbox
 " colorscheme C64
 set guifont=Inconsolata\ 14
 " set guifont=C64\ Pro\ Mono\ 8
-set fillchars+=vert:\$
+set fillchars+=vert:\|
 syntax enable
 set background=dark
 set ruler
