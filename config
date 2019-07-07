@@ -7,7 +7,8 @@
 set $mod Mod4
 
 # ---------------- { apperance } --------------- #
-font pango:monospace 8
+# font pango:monospace 8
+font pango:inconsolata 10
 
 # set primary gruvbox colorscheme colors
 set $bg #282828
