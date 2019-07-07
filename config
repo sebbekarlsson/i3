@@ -19,11 +19,7 @@ set $purple #b16286
 set $aqua #689d68
 set $gray #a89984
 set $darkgray #1d2021
-
-# gaps size
-gaps inner 0
-gaps outer 0
-
+set $white #ffffff
 
 # class                 border|backgr|text|indicator|child_border
 client.focused          $red $red $darkgray $red $red
