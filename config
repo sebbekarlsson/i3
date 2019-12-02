@@ -29,11 +29,10 @@ client.unfocused        $darkgray $darkgray $yellow $bg $darkgray
 client.urgent           $red $red $white $red $red
 #end of window title bars & borders section
 
-
 # windows
 new_window 1pixel
 #for_window [class="^.*"] border pixel 1
-for_window [class="^.*"] border normal
+for_window [class="^.*"] border pixel 0
 
 # lockscreen
 bindsym $mod+l exec "~/.config/i3lock/fuzzy_lock.sh"
