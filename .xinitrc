@@ -1,7 +1,5 @@
-if [ -f ~/.Xmodmap ]; then
-	xmodmap ~/.Xmodmap
-fi
+xrdb -merge /home/ianertson/.Xresources
+feh --bg-fill /home/ianertson/bg.jpg -F
+compton --daemon --config /home/ianertson/.config/compton.conf
 
-#feh --bg-fill /home/ianertson/Pictures/bg.png -F
-/usr/bin/xrdb -merge /home/ianertson/.Xresources
-exec /usr/bin/i3
+exec i3
