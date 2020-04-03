@@ -1,0 +1,33 @@
+snippet make
+exec = $1.out
+sources = $(wildcard src/*.c)
+objects = $(sources:.c=.o)
+flags = -g -Wall -lm -ldl -fPIC -rdynamic
+
+
+$(exec): $(objects)
+	gcc $(objects) $(flags) -o $(exec)
+
+lib$1.a: $(objects)
+	ar rcs $@ $^
+
+%.o: %.c include/%.h
+	gcc -c $(flags) $< -o $@
+
+install:
+	make
+	make lib$1.a
+	mkdir -p /usr/local/include/$1
+	cp -r ./src/include/* /usr/local/include/$1/.
+	cp ./lib$1.a /usr/local/lib/.
+	cp ./$1.out /usr/local/bin/$1
+
+clean:
+	-rm *.out
+	-rm *.o
+	-rm *.a
+	-rm src/*.o
+
+lint:
+	clang-tidy src/*.c src/include/*.h
+endsnippet
