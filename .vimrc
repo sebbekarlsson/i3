@@ -7,7 +7,7 @@ set encoding=UTF-8
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-source /home/ianertson/.vim/vpm/sources.vim
+source $HOME/.vim/vpm/sources.vim
 
 call vundle#end()
 filetype plugin indent on
@@ -15,7 +15,7 @@ filetype plugin indent on
 " ==== Colors and other basic settings
 colorscheme gruvbox
 " colorscheme C64
-set guifont=Inconsolata\ 14
+set guifont=Inconsolata\ 12
 " set guifont=C64\ Pro\ Mono\ 8
 set fillchars+=vert:\|
 syntax enable
@@ -52,7 +52,7 @@ let g:syntastic_check_on_wq = 0
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_checkers = ['eslint', 'tslint']
 let g:syntastic_javascript_mri_args = "--config=$HOME/.jshintrc"
 let g:syntastic_python_checkers = [ 'pylint', 'flake8', 'python' ]
 let g:syntastic_yaml_checkers = ['jsyaml']
