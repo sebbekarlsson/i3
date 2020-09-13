@@ -15,7 +15,7 @@ filetype plugin indent on
 " ==== Colors and other basic settings
 colorscheme gruvbox
 " colorscheme C64
-set guifont=Inconsolata\ 12
+set guifont=Inconsolata\ 14
 " set guifont=C64\ Pro\ Mono\ 8
 set fillchars+=vert:\|
 syntax enable
@@ -25,9 +25,9 @@ set hidden
 set number
 set laststatus=2
 set smartindent
-set st=4 sw=4 et
-set shiftwidth=4
-set tabstop=4
+set st=2 sw=2 et
+set shiftwidth=2
+set tabstop=2
 let g:vim_json_syntax_conceal = 0
 set colorcolumn=80
 :set guioptions-=m  "remove menu bar
@@ -54,10 +54,15 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_javascript_checkers = ['eslint', 'tslint']
 let g:syntastic_javascript_mri_args = "--config=$HOME/.jshintrc"
-let g:syntastic_python_checkers = [ 'pylint', 'flake8', 'python' ]
+let g:syntastic_python_checkers = [ 'flake8', 'python' ]
 let g:syntastic_yaml_checkers = ['jsyaml']
 let g:syntastic_html_tidy_exec = 'tidy5'
 let g:syntastic_python_flake8_config_file='.flake8'
+
+" === typescript
+let g:tsuquyomi_disable_default_mappings = 1
+autocmd FileType typescript noremap <silent> <C-]> :TsuDefinition<CR>
+autocmd FileType typescriptreact noremap <silent> <C-]> :TsuDefinition<CR>
 
 " === flake8
 let g:flake8_show_in_file=1
