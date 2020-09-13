@@ -1,0 +1,5 @@
+@define-color BACKGROUND_COLOR #282828;
+
+window#vim-main-window {
+    background-color: @BACKGROUND_COLOR;
+}
