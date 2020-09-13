@@ -1,33 +1,57 @@
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-scripts/L9'
+
+" Themes
+Plugin 'morhetz/gruvbox'
+
+" Trees | Navigation
 Plugin 'scrooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-surround'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'othree/yajs.vim'
-Plugin 'mitsuhiko/vim-jinja'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'ap/vim-css-color'
-Plugin 'Vimjas/vim-python-pep8-indent'
-Plugin 'python-rope/rope'
-Plugin 'python-rope/ropemode'
-Plugin 'python-rope/ropevim'
-Plugin 'klen/pylama'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'kien/ctrlp.vim'
-Plugin 'ervandew/supertab'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'SirVer/ultisnips'
 Plugin 'bling/vim-airline'
-Plugin 'morhetz/gruvbox'
-Plugin 'alvan/vim-closetag'
-Plugin 'elzr/vim-json'
-Plugin 'ekalinin/dockerfile.vim'
-Plugin 'gregsexton/matchtag'
+
+" Autocomplete | General syntax
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'SirVer/ultisnips'
 Plugin 'taglist.vim'
-Plugin 'tikhomirov/vim-glsl'
+
+" Git
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+
+" Javascript | Typescript
+Plugin 'Quramy/tsuquyomi'
+Plugin 'pangloss/vim-javascript'
+
+" Json
+Plugin 'elzr/vim-json'
+
+" HTML | XML
+Plugin 'alvan/vim-closetag'
+Plugin 'gregsexton/matchtag'
+
+" Docker
+Plugin 'ekalinin/dockerfile.vim'
+
+" CSS | SCSS
+Plugin 'ap/vim-css-color'
+Plugin 'cakebaker/scss-syntax.vim'
+
+" Templating
+Plugin 'mitsuhiko/vim-jinja'
+Plugin 'file:///home/ianertson/workspace/gpp-vim'
+
+" Python
+Plugin 'Vimjas/vim-python-pep8-indent'
+Plugin 'klen/pylama'
 Plugin 'nvie/vim-flake8'
-Plugin 'file:///home/ianertsonn/workspace/vim-linepoints'
+
+" C / C++
+Plugin 'octol/vim-cpp-enhanced-highlight'
+
+" OpenGL / GLSL
+Plugin 'tikhomirov/vim-glsl'
+
+" Not sure but apparently useful
+Plugin 'vim-scripts/L9'

@@ -12,6 +12,8 @@ source $HOME/.vim/vpm/sources.vim
 call vundle#end()
 filetype plugin indent on
 
+set omnifunc=syntaxComplete#Complete
+
 " ==== Colors and other basic settings
 colorscheme gruvbox
 " colorscheme C64
