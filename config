@@ -42,7 +42,7 @@ bindsym $mod+l exec "~/.config/i3lock/fuzzy_lock.sh"
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec st
 
 # screenshot
 bindsym --release $mod+Ctrl+p exec scrot /home/ianertson/scrot.png -s
