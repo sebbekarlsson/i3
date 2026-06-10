@@ -1,0 +1,53 @@
+# Color scheme ported from ~/.Xresources
+
+[colors.primary]
+foreground = "#c0b18b"
+background = "#282828"
+
+[colors.cursor]
+cursor = "#c0b18b"
+text   = "#282828"  # color of the glyph under the cursor
+
+[colors.normal]
+black   = "#4a3637"
+red     = "#d17b49"
+green   = "#7b8748"
+yellow  = "#af865a"
+blue    = "#535c5c"
+magenta = "#775759"
+cyan    = "#6d715e"
+white   = "#c0b18b"
+
+[colors.bright]
+black   = "#4a3637"
+red     = "#d17b49"
+green   = "#7b8748"
+yellow  = "#af865a"
+blue    = "#535c5c"
+magenta = "#775759"
+cyan    = "#6d715e"
+white   = "#c0b18b"
+
+# Optional: font from your URxvt resource (uncomment to use)
+# [font]
+# size = 10.0
+#
+# [font.normal]
+# family = "Noto Sans Mono"
+# style  = "Medium"
+
+# Copy mouse selections straight to the CLIPBOARD (not just PRIMARY),
+# so they can be pasted in other apps (emacs, browser) without pressing Copy
+[selection]
+save_to_clipboard = true
+
+[keyboard]
+bindings = [
+  # Scroll the terminal buffer with Alt+Up / Alt+Down (st-style)
+  { key = "Up",   mods = "Alt", action = "ScrollLineUp"   },
+  { key = "Down", mods = "Alt", action = "ScrollLineDown" },
+
+  # st-style clipboard: Ctrl+Alt+C / Ctrl+Alt+V
+  { key = "C", mods = "Control|Alt", action = "Copy"  },
+  { key = "V", mods = "Control|Alt", action = "Paste" },
+]
