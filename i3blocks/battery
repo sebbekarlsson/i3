@@ -28,6 +28,9 @@ open (ACPI, "acpi -b | grep 'Battery $bat_number' |") or die;
 $acpi = <ACPI>;
 close(ACPI);
 
+# no battery (e.g. desktop): print nothing so i3blocks hides the block
+exit(0) unless defined $acpi;
+
 # fail on unexpected output
 if ($acpi !~ /: (\w+), (\d+)%/) {
 	die "$acpi\n";
@@ -49,9 +52,12 @@ if ($acpi =~ /(\d\d:\d\d):/) {
 	$full_text .= " ($1)";
 }
 
+# trailing separator lives here so it disappears along with the block
+my $sep = " <span color='#fb4934'>|</span>";
+
 # print text
-print "$full_text\n";
-print "$short_text\n";
+print "$full_text$sep\n";
+print "$short_text$sep\n";
 
 # consider color and urgent flag only on discharge
 if ($status eq 'Discharging') {
